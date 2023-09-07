@@ -1,0 +1,23 @@
+{
+    "name": "ui-cool-app-shared",
+    "private": true,
+    "version": "0.0.0",
+    "type": "module",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "scripts": {
+        "build": "pnpm exec esbuild --bundle src/index.ts --outdir=dist --sourcemap --platform=neutral --packages=external && tsc --emitDeclarationOnly",
+        "dev": "pnpm build --watch",
+        "link-deps": "pnpm link ../demo-api-sdk"
+    },
+    "devDependencies": {
+        "esbuild": "^0.19.2",
+        "typescript": "^5.0.2"
+    },
+    "dependencies": {
+        "@reduxjs/toolkit": "^1.9.5",
+        "@types/node": "^20.5.9",
+        "dotenv": "^16.3.1",
+        "react-redux": "^8.1.2"
+    }
+}
