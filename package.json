@@ -17,7 +17,6 @@
     "dependencies": {
         "@reduxjs/toolkit": "^1.9.5",
         "@types/node": "^20.5.9",
-        "dotenv": "^16.3.1",
         "react-redux": "^8.1.2"
     }
 }

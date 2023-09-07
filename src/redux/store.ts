@@ -1,5 +1,6 @@
-import { configureStore } from '@reduxjs/toolkit';
-import { DemoSlice, _demoActions, demoSlice } from './reducers/demoSlice';
+import { configureStore } from "@reduxjs/toolkit";
+import { DemoSlice, _demoActions, demoSlice } from "./reducers/demoSlice";
+export type { DemoSlice } from "./reducers/demoSlice"; 
 
 export interface ApplicationState {
     demo: DemoSlice;
